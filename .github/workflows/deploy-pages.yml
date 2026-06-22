@@ -48,14 +48,14 @@ jobs:
             <head>
               <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <meta http-equiv="refresh" content="0; url=/demo_apex_casapellas/" />
-              <title>APEX Mockup</title>
+              <meta http-equiv="refresh" content="0; url=https://www.naraconsultores.com/" />
+              <title>Nara Consultores</title>
               <script>
-                window.location.replace('/demo_apex_casapellas/')
+                window.location.replace('https://www.naraconsultores.com/')
               </script>
             </head>
             <body>
-              <a href="/demo_apex_casapellas/">Abrir APEX Mockup</a>
+              <a href="https://www.naraconsultores.com/">Abrir Nara Consultores</a>
             </body>
           </html>
           EOF
