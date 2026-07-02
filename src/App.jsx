@@ -3539,7 +3539,7 @@ function PELinesTab({ role, currentPE, peLinesData, onToggleLine, onToggleAllLin
       {!hasOc && role === 'Compras' && <div className="notice"><AlertTriangle size={16} /> Registre la OC JDE para habilitar fechas estimadas.</div>}
       {readOnly && <div className="notice"><Lock size={16} /> Pedido Especial recibido completo. El detalle queda solo lectura.</div>}
       <DataTable
-        columns={[...(canUseSelection ? [selectionHeader] : []), 'Linea', 'SKU', 'Descripcion', 'Solicitada', 'Recibida', 'Pendiente', 'Estado linea', 'Fecha estimada', 'Fecha recepcion', 'OC linea', 'Requerido por Taller', 'Usuario', 'Observacion']}
+        columns={[...(canUseSelection ? [selectionHeader] : []), 'Linea', 'SKU', 'Descripcion', 'Solicitada', 'Recibida', 'Pendiente', 'Estado linea', 'Fecha estimada', 'Fecha recepcion', 'OC linea', 'Facturado', 'Usuario', 'Observacion']}
         rows={peLinesData.map((line, index) => ({
           className: hasInvalidReceiptCapture(line) ? 'row-warning' : '',
           cells: [
@@ -4046,10 +4046,6 @@ function CreateCaseFields({ values, setValues }) {
             onChange={(event) => updateValue(setValues, 'proforma', event.target.value)}
             placeholder="PF-001"
           />
-        </label>
-        <label>
-          <span>Fecha estimada</span>
-          <input type="date" />
         </label>
       </div>
       {!values.ot.trim() && !values.proforma.trim() && (
